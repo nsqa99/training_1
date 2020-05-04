@@ -7,8 +7,68 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div>
-        
+    <div class="container">
+        <form action="./info.html" id="form">
+            <div>
+                <label for="name" class="left">Ho ten:</label>
+                <input type="text" id="name" class="input obligatory"><span id="name-error"></span>
+            </div>
+            <div>
+                <label for="address" class="left">Dia chi:</label>
+                <input type="text" id="address" class="input">
+            </div>
+            <div>
+                <label class="left">Gioi tinh:</label> 
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Nu</label>
+            </div>
+            <div>
+                <label for="dob" class="left">Ngay sinh:</label>
+                <input type="text" id="dob" placeholder="dd/mm/yyyy" class="input obligatory"><span id="dob-error"></span>    
+            </div>
+            <div>
+                <label for="email" class="left">Email:</label>
+                <input type="text" id="email" class="input obligatory"><span id="email-error"></span>
+            </div>
+            <div>
+                <label for="phone-number" class="left">Dien thoai:</label>
+                <input type="text" id="phone-number" class="input">
+            
+            </div>
+            <div>
+                <label class="left">Khoa dang ki:</label>
+                <input type="checkbox" name="courses" id="eng" value="english">
+                <label for="eng">Tieng Anh</label>
+                <input type="checkbox" name="courses" id="management" value="management">
+                <label for="management">Quan tri</label>
+                <input type="checkbox" name="courses" id="int" value="int">
+                <label for="int">CNTT</label>
+            </div>
+            <div>
+                <label for="username" class="left">Ten su dung:</label>
+                <input type="text" id="username" class="input obligatory"><span id="usrname-error"></span>
+            </div>
+            <div>
+                <label for="password" class="left">Mat khau:</label>
+                <input type="password" id="password" class="input obligatory"><span id="pass-error"></span>
+            </div>
+            <div>
+                <label for="repass" class="left">Go lai mat khau:</label>
+                <input type="password" id="repass" class="input obligatory"><span id="repass-error"></span>
+            </div>
+            <div>
+                <label for="note" class="left">Ghi chu:</label>
+                <textarea id="note" rows="6" cols="30"></textarea>
+            </div>
+            
+            <div class="button">
+                <button type="submit" id="submit-btn">Chap nhan</button>
+                <button id="cancel">Bo qua</button>
+            </div>
+            
+        </form>
     </div>
 </body>
 <script src="./scripts/script.js"></script>
